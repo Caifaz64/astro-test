@@ -1,5 +1,8 @@
 ---
-import './src/pages/styles/global.css';
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
 const pageTitle = "Home Page";
 ---
 
@@ -12,10 +15,13 @@ const pageTitle = "Home Page";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
-		
-		<h1>Mi sitio</body></h1>
+		<Header />
+	
+		<h1>Mi primer sitio Astro!</body></h1>
+
+		<Footer />
+		<script>
+			import "../scripts/menu.js"; // This is a simple script to demonstrate the use of JavaScript in Astro
+  		</script>
 	</body>
 </html>
